@@ -1,5 +1,7 @@
+import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 public class ManipulandoDatas {
 
@@ -43,5 +45,23 @@ public class ManipulandoDatas {
 		System.out.println(dateFormatado2);
 		System.out.println();
 		
+		//FORMATANDO DATA
+		DateFormat df1 = DateFormat.getDateInstance(DateFormat.SHORT);
+		String formatacaoCurta = df1.format(dateFormatado2);
+		System.out.println("Formato curto: " +formatacaoCurta);
+
+		DateFormat df2 = DateFormat.getDateInstance(DateFormat.MEDIUM);
+		String formatacaoMedia = df2.format(dateFormatado2);
+		System.out.println("Formato médio: " +formatacaoMedia);
+		
+		DateFormat df3 = DateFormat.getDateInstance(DateFormat.LONG);
+		String formatacaoLonga = df3.format(dateFormatado2);
+		System.out.println("Formato Longo: " +formatacaoLonga);
+
+		//FORMATANDO A DATA DE ACORDO COM UM PAÍS
+		DateFormat df4 = DateFormat.getDateInstance(DateFormat.LONG, new Locale("en","US"));
+		String formatacaoLongaUS = df4.format(dateFormatado2);
+		System.out.println("Formato Longo US: " +formatacaoLongaUS);
+
 	}
 }
