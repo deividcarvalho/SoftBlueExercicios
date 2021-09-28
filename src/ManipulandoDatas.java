@@ -1,4 +1,5 @@
 import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
@@ -63,5 +64,9 @@ public class ManipulandoDatas {
 		String formatacaoLongaUS = df4.format(dateFormatado2);
 		System.out.println("Formato Longo US: " +formatacaoLongaUS);
 
+		//FORMATANDO DO MEU JEITO COM SIMPLEDATEFORMAT
+				SimpleDateFormat sdf5 = new SimpleDateFormat("dd-MM-yyyy");
+				String formatacaoPersonalizada = sdf5.format(dateFormatado2);
+				System.out.println("Minha formatação: " +formatacaoPersonalizada);
 	}
 }
