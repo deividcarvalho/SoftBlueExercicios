@@ -20,7 +20,7 @@ public class AulaStrings {
 		
 		System.out.println("Dados inseridos na Classe StringBuilder");
 		System.out.println(s);
-		System.out.println();
+		System.out.println("==========================");
 		
 	
 
@@ -31,25 +31,25 @@ public class AulaStrings {
 		NumberFormat nb = NumberFormat.getCurrencyInstance();
 		String moedaCorrente = nb.format(valor);		
 		System.out.println(moedaCorrente);
-		System.out.println();
+		System.out.println("==========================");
 		
 		System.out.println("Formatando para moeda Dollar");
 		NumberFormat nb2 = NumberFormat.getCurrencyInstance(new Locale("en","US"));
 		String moedaDollar = nb2.format(valor);
 		System.out.println(moedaDollar);
-		System.out.println();
+		System.out.println("==========================");
 		
 		System.out.println("Formatando valores");
 		NumberFormat nb3 = NumberFormat.getNumberInstance();
 		String valorCorrente = nb3.format(valor);
 		System.out.println(valorCorrente);
-		System.out.println();
+		System.out.println("==========================");
 		
 		System.out.println("Formatando valor US");
 		NumberFormat nb4 = NumberFormat.getNumberInstance(new Locale("en","US"));
 		String valorUS = nb4.format(valor);
 		System.out.println(valorUS);
-		System.out.println();
+		System.out.println("==========================");
 		
 		System.out.println("Usando Máscara");
 		DecimalFormat df1 = new DecimalFormat("00000.000");
