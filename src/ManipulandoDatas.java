@@ -24,11 +24,24 @@ public class ManipulandoDatas {
 		System.out.println("Calendar apresenta formatação ToString");
 		System.out.println(calendar);
 		System.out.println();
-
-		//AQUI ESTOU COLOCANDO O calendar em um Date para ficar mais amigável
-		Date dateFormatado = calendar.getTime();
+		
+		//AQUI ESTOU COLOCANDO O calendar em um Date para ficar mais amigável		
 		System.out.println("Calendar dentro do Date = Mais amigável");
+		Date dateFormatado = calendar.getTime();
 		System.out.println(dateFormatado);
+		System.out.println();
+		
+
+		//ADICIONANDO UM ANO
+		calendar.add(Calendar.YEAR, 1);
+		System.out.println();
+
+		
+		//AQUI ESTOU COLOCANDO O calendar em um Date para ficar mais amigável
+		System.out.println("Calendar dentro do Date = Mais amigável");
+		Date dateFormatado2 = calendar.getTime();
+		System.out.println(dateFormatado2);
+		System.out.println();
 		
 	}
 }
