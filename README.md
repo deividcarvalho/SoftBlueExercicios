@@ -1,3 +1,3 @@
-# Curso Digital: Git
-# ## Gravando mudanças no repositório
-* uso do comando git restore
+# Exercícios SoftBlue
+# aprendendo sobre programação Java
+* uso do comando git pull
